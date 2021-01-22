@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jakerumbles/troll-bot#readme",
   "dependencies": {
+    "@discordjs/opus": "^0.3.3",
     "discord.js": "^12.5.1",
     "eslint": "^7.18.0",
     "https-proxy-agent": "^3.0.0",

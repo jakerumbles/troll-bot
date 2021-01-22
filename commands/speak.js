@@ -23,6 +23,7 @@ module.exports = {
         synthesizer.speakTextAsync(text, function (result) {
             if (result.reason === sdk.ResultReason.SynthesizingAudioCompleted) {
                 console.log("synthesis finished.");
+                
             } else {
                 console.error("Speech synthesis canceled, " + result.errorDetails +
                     "\nDid you update the subscription info?");
@@ -36,6 +37,5 @@ module.exports = {
         });
         console.log("Now synthesizing to: " + filename);
 
-		message.channel.send(text);
 	},
 };

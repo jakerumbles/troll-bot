@@ -28,8 +28,10 @@ client.on('message', message => {
 
 	// Strip prefix from command. Store command and args in array
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
+
+	// keep in string type for sending to Az Cognitive Services
 	const argsString = message.content.slice(prefix.length);
-	console.log(typeof(args));
+
 	// Pop the command off of the front of the array
 	const commandName = args.shift().toLowerCase();
 
